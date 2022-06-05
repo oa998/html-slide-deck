@@ -7,7 +7,9 @@
   "description": "",
   "scripts": {
     "prerollup": "rm -rf dist",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "postrollup": "npm version patch && cp package.json dist/package.json",
+    "publish": "cd dist && npm publish"
   },
   "keywords": [],
   "author": "",
@@ -28,10 +30,7 @@
     "@types/react": "^18.0.11",
     "react": "^18.1.0"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts"
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "index.d.ts"
 }
