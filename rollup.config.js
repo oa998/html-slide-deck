@@ -27,7 +27,7 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: path.resolve("dist/hsd.css"),
+        extract: path.resolve(path.resolve(), "dist/hsd.css"),
       }),
     ],
   },
