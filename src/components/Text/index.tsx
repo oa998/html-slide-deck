@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import "./text.css";
 
 type TextProps = {
   fontSize?: string;
@@ -15,6 +16,7 @@ const Text = ({ fontSize, bold, children }: TextProps) => {
         minWidth: "100px",
         maxWidth: "1000px",
       }}
+      className='hsd-text'
     >
       {children}
     </div>
