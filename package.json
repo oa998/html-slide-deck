@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/oa998"
   },
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "",
   "scripts": {
     "prerollup": "rm -rf dist",
