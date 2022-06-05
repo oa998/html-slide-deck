@@ -6,6 +6,7 @@
   "version": "0.2.0",
   "description": "",
   "scripts": {
+    "prerollup": "rm -rf dist",
     "rollup": "rollup -c"
   },
   "keywords": [],
