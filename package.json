@@ -1,5 +1,8 @@
 {
-  "name": "rslide",
+  "name": "@oa998/html-slide-deck",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/oa998"
+  },
   "version": "0.1.0",
   "description": "",
   "scripts": {
