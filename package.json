@@ -9,7 +9,7 @@
     "prerollup": "rm -rf dist",
     "rollup": "rollup -c",
     "postrollup": "npm version patch && cp package.json dist/package.json",
-    "publish": "cd dist && npm publish"
+    "publish": "ls && cd dist && npm publish"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +30,6 @@
     "@types/react": "^18.0.11",
     "react": "^18.1.0"
   },
-  "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "main": "index.js",
   "types": "index.d.ts"
 }

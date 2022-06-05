@@ -12,13 +12,13 @@ export default [
   {
     input: "src/index.ts",
     output: [
+      // {
+      //   file: "dist/cjs/index.js",
+      //   format: "cjs",
+      //   sourcemap: true,
+      // },
       {
-        file: "dist/cjs/index.js",
-        format: "cjs",
-        sourcemap: true,
-      },
-      {
-        file: "dist/esm/index.js",
+        file: "dist/index.js",
         format: "esm",
         sourcemap: true,
       },
@@ -29,13 +29,13 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: true,
+        extract: "styles.css",
       }),
       terser(),
     ],
   },
   {
-    input: "dist/esm/types/index.d.ts",
+    input: "dist/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
     external: [/\.css$/],
