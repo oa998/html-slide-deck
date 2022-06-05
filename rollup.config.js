@@ -1,6 +1,7 @@
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
+import path from "path";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 
@@ -26,7 +27,7 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: "dist/hsd.css",
+        extract: path.resolve("dist/hsd.css"),
       }),
     ],
   },
