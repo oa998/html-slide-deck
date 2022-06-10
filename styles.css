@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  font-family: "Averia Sans Libre", sans-serif;
+  text-shadow: 2px 2px #555;
+}
+
+body {
+  height: "100%";
+}
+
+.hsd-image {
+  height: 100%;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.hsd-hcontent {
+  display: grid;
+  /* gridTemplateColumns: Array(cols || 2)
+    .fill("1fr")
+    .join( ); */
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  margin: 2%;
+}
+
+.hsd-vcontent {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  gap: 10px;
+  margin: 2%;
+  height: 96%;
+}
+
+.hsd-title {
+  grid-area: title; /* relevant for the slide.css styling*/
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+  color: green;
+}
+
+.hsd-text {
+  min-width: 100px;
+  max-width: 1000px;
+}
+
+.hsd-text.bold {
+  font-weight: bold;
+}
+
+.hsd-text.t1 {
+  font-size: 0.5em;
+}
+
+.hsd-text.t2 {
+  font-size: 0.75em;
+}
+
+.hsd-text.t3 {
+  font-size: 1em;
+}
+
+.hsd-text.t4 {
+  font-size: 1.25em;
+}
+
+.hsd-text.t5 {
+  font-size: 1.5em;
+}
+
+.hsd-text.t6 {
+  font-size: 2em;
+}
+
+.hsd-text.t7 {
+  font-size: 2.5em;
+}
+
+.hsd-text.t8 {
+  font-size: 3em;
+}

@@ -8,24 +8,11 @@ import { ReactNode } from "react";
 // import "swiper/css/scrollbar";
 // import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
+import "./SlideShow.scss";
 
-export default ({
-  theme = {},
-  // swiperProps = {},
-  children,
-}: {
-  theme?: object;
-  // swiperProps?: SwiperProps;
-  children: ReactNode[];
-}) => {
+export default ({ children }: { children: ReactNode[] }) => {
   return (
-    <div
-      style={{
-        ...theme,
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <div className='hsd-slideshow'>
       {/* <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar]}
